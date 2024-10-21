@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <link rel="stylesheet" href="stile-2.css">
+    <link rel="icon" type="image" href="icon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 страница</title>
+</head>
+
+<body>
+    <header>
+        <h1><span id="lvl_lvl"></span> уровень сложности</h1>
+        <h1>Ваше время: <span id="time">--:--</span></h1>
+    </header>
+
+
+    <main>
+        <section>
+                <button id="menu">Вернуться в меню</button>
+                <button id="again">Начать заново с новым числом</button>
+            <p>Угадай число <span id="lvl_rang"></span></p>
+            <p>У тебя <span id="lvl_steps"></span></p>
+
+            <form id="inp_b">
+                <input type="text" id="b"> </input>
+                <p id="lvl_help">Подсказки</p>
+            </form>
+
+            <form id="group" class="que_group">
+                <button type="submit" class="question">Это простое число?</button>
+                <button type="submit" class="question">Это число делится на 2?</button>
+                <button type="submit" class="question">Это число делится на 3?</button>
+                <button type="submit" class="question">Это число делится на 5?</button>
+                <button type="submit" class="question">Это число больше?</button>
+            </form>
+
+                <button id="rating">Сдаться</button>
+        </section>
+
+        <aside style="width: 50%;">
+            <table id="table">
+                <thead><td>Число</td><td>Комментарий</td></thead>
+            </table>
+        </aside>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Мой первый сайт</p>
+    </footer>
+
+    <script src="./main2.js"> </script>
+
+</body>
+
+</html>

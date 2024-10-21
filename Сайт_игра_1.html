@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <link rel="stylesheet" href="stile-1.css">
+    <link rel="icon" href="icon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 страница</title>
+</head>
+
+<body>
+    <header>
+        <h1>Добро пожаловать в игру</h1>
+        <h2>Угадай число!</h2>
+    </header>
+
+    <main>
+        <section>
+            <h1>Об игре</h1>
+            <p>В этой игре тебе необходимо угадать число, которое загадал робот.</p>
+            <p>Ты можешь выбрать один из нескольких уровней сложности, чтобы посоревноваься с друзьями или настроить
+                свой самый сложный уровень.</p>
+            <h1>Тактика игры</h1>
+            <p>Ты можешь попробовать угадать число сам, перебрав все возможные варианты, но в таком случае ты потратишь
+                много времени и попыток.</p>
+            <p>Лучше всего воспользоваться тактикой "Половина". Начни с среднего значения и пстепенно двигайся в ту
+                стророну, которую подскажет бот, прибавляя или вычитая половину от всех возможных чисел.</p>
+            <p>Например: В диапазоне от 0 до 100 начни с проверки числа 50. Если ты не угадаешь с первой попытки, бот
+                подскажет тебе, где искать число. По обе стороны от 50 есть числа, которые мог загадать бот и их уже не
+                сто, а пятьдесят, ведь число бота будет либо меньше 50 (0-50), либо больше 50 (50-100).
+            <p>Теперь мы выбираем не из ста, а из пятидесяти чисел, и нам снова нужно найти половину. 50/2=25, поэтому
+                нужно изменить 50 на 25, в большую (+25) или в меньшую (-25) сторону.</p>
+        </section>
+
+        <aside style=" text-align: center">
+            <h1>Чтобы начать игру, выбери уровень!</h1>
+            <button id="lvl1">Лёгкий</button>
+            <button id="lvl2">Средний</button>
+            <button id="lvl3">Сложный</button>
+            <button id="lvl0">Настраиваемый</button>
+
+            <form action="Сайт_игра_2.html">
+                <button><b>Начать игру</b></button>
+            </form>
+            <form action="Сайт_игра_3.html">
+                <button><b>Показать рейтинг</b></button>
+            </form>
+        </aside>
+
+        <aside>
+            <h1><span id="Poyasnenie0"></span> уровень сложности!</h1>
+
+            <ul>
+
+                <li>Диапазон числа: <span id="Poyasnenie1"></span></li>
+                <fieldset>
+                    <input type="radio" class="setings" name="group1" id="0"><label for="0">от 0 до 10</label>
+                    <input type="radio" class="setings" name="group1" id="1"><label for="1">от 0 до 100</label>
+                    <input type="radio" class="setings" name="group1" id="2"><label for="2">от 0 до 1000</label>
+                </fieldset>
+                <li>Количество попыток: <span id="Poyasnenie2"></span></li>
+                <fieldset>
+                    <input type="radio" class="setings" name="group2" id="3"><label for="3">Бесконечно</label> 
+                    <input type="radio" class="setings" name="group2" id="4"><label for="4">5</label>
+                    <input type="radio" class="setings" name="group2" id="5"><label for="5">10</label> 
+                </fieldset>
+                   
+                <li>Журнал вводимых чисел: <span id="Poyasnenie3"></span></li>
+                <fieldset>
+                    <input type="radio" class="setings" name="group3" id="6"><label for="6">Выключить</label>
+                    <input type="radio" class="setings" name="group3" id="7"><label for="7">Включить</label>
+                    <input type="radio" class="setings" style="display: none;" value="__" name="group3" id="8">
+                </fieldset>
+                <li>Подсказки: <span id="Poyasnenie4"></span></li>
+                <fieldset>
+                    <input type="radio" class="setings" name="group4" id="9"><label for="9">Без подсказок</label>
+                    <input type="radio" class="setings" name="group4" id="10"><label for="10">От бота</label>
+                    <input type="radio" class="setings" name="group4" id="11"><label for="11">5 вопросов</label>
+                </fieldset>
+            </ul>
+        </aside>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Мой первый сайт</p>
+    </footer>
+    <script src="./main1.js"> </script>
+
+</body>
+
+</html>
